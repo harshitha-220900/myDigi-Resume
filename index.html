@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Resume</title>
+    <title>Harshitha - Web Developer</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,167 +17,405 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="bi bi-person"></i> Harshitha</a>
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-person-circle me-2"></i>Harshitha
+            </a>
 
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-<span class="navbar-toggler-icon"></span>
-</button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#skills">Skills</a></li>
-                            <li><a class="dropdown-item" href="#contact">Contact</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- HERO -->
-    <section id="home" class="container text-center p-5">
-        <h1 class="display-4">Hi, I'm Harshitha 👋</h1>
-        <p class="lead">Web Developer</p>
-        <span class="badge bg-success">Available</span>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="container p-5">
-        <h2>About Me</h2>
-        <p>I am a student learning Bootstrap and Web Development.</p>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="container p-5">
-        <h2>Skills</h2>
-
-        <div class="progress mb-3">
-            <div class="progress-bar bg-success" style="width:90%">HTML</div>
-        </div>
-
-        <div class="progress mb-3">
-            <div class="progress-bar bg-info" style="width:80%">CSS</div>
-        </div>
-
-        <span class="badge bg-primary">Bootstrap</span>
-    </section>
-
-    <!-- PROJECTS (GRID + CARD) -->
-    <section class="container p-5">
-        <h2>Projects</h2>
-
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" class="img-fluid">
-                    <div class="card-body">
-                        <h5>Project 1</h5>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">View</button>
+    <section id="home" class="hero-section text-center py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto">
+                    <div class="hero-content">
+                        <img src="images/profile.png" alt="Profile Photo"
+                            class="profile-img mb-4 rounded-circle shadow">
+                        <h1 class="display-4 fw-bold text-white mb-3">Hi, I'm Harshitha 👋</h1>
+                        <p class="lead text-white-50 mb-4">Passionate Web Developer & UI/UX Enthusiast</p>
+                        <div class="hero-badges mb-4">
+                            <span class="badge bg-light text-primary me-2 fs-6">Available for Work</span>
+                            <span class="badge bg-light text-primary fs-6">Remote Ready</span>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-light btn-lg me-3">Get In Touch</a>
+                            <a href="#projects" class="btn btn-outline-light btn-lg">View My Work</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- MODAL -->
-    <div class="modal fade" id="modal1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5>Project Info</h5>
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
+    <!-- ABOUT -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">About Me</h2>
+                    <p class="lead mb-4">I'm a passionate web developer with a keen interest in creating beautiful,
+                        functional, and user-friendly digital experiences. Currently pursuing my B.Tech degree while
+                        building my skills in modern web technologies.</p>
+                    <p class="mb-4">I love turning complex problems into simple, elegant solutions. When I'm not coding,
+                        you can find me exploring new technologies, contributing to open-source projects, or learning
+                        about UI/UX design principles.</p>
+                    <div class="about-stats">
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <div class="stat-number">2+</div>
+                                <div class="stat-label">Years Learning</div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Technologies</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">Project Details Here</div>
+                <div class="col-lg-6">
+                    <div class="about-image text-center">
+                        <img src="https://via.placeholder.com/400x400/e9ecef/6c757d?text=About+Me" alt="About Me"
+                            class="img-fluid rounded shadow">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- TABLE -->
-    <section class="container p-5">
-        <h2>Education</h2>
-        <table class="table table-bordered">
-            <tr>
-                <th>Year</th>
-                <th>Course</th>
-            </tr>
-            <tr>
-                <td>2023</td>
-                <td>B.Tech</td>
-            </tr>
-        </table>
     </section>
 
-    <!-- LIST GROUP -->
-    <div class="container p-5">
-        <h2>Experience</h2>
-        <ul class="list-group">
-            <li class="list-group-item">Internship</li>
-            <li class="list-group-item">Projects</li>
-        </ul>
-    </div>
+    <!-- SKILLS -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Skills & Expertise</h2>
 
-    <!-- ALERT -->
-    <div class="container">
-        <div class="alert alert-success">Welcome to my Resume</div>
-    </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="mb-4">Technical Skills</h4>
 
-    <!-- CAROUSEL -->
-    <div id="carouselExample" class="carousel slide container">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://via.placeholder.com/800x300" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/800x300" class="d-block w-100">
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>HTML5</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width:90%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>CSS3</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" style="width:85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>JavaScript</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width:75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Bootstrap</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width:80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h4 class="mb-4">Tools & Technologies</h4>
+                    <div class="skill-badges">
+                        <span class="badge skill-badge">Git</span>
+                        <span class="badge skill-badge">GitHub</span>
+                        <span class="badge skill-badge">VS Code</span>
+                        <span class="badge skill-badge">Figma</span>
+                        <span class="badge skill-badge">Responsive Design</span>
+                        <span class="badge skill-badge">jQuery</span>
+                        <span class="badge skill-badge">REST APIs</span>
+                        <span class="badge skill-badge">UI/UX</span>
+                    </div>
+
+                    <h4 class="mt-4 mb-3">Soft Skills</h4>
+                    <div class="soft-skills">
+                        <div class="soft-skill-item">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            <span>Team Collaboration</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            <span>Continuous Learning</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            <span>Attention to Detail</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- COLLAPSE -->
-    <div class="container p-5">
-        <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#demo">More Info</button>
-        <div id="demo" class="collapse">Hidden content</div>
-    </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Featured Projects</h2>
 
-    <!-- CONTACT FORM -->
-    <section id="contact" class="container p-5">
-        <h2>Contact</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="https://via.placeholder.com/400x250/007bff/ffffff?text=Portfolio+Website"
+                                class="card-img-top" alt="Portfolio Website">
+                            <div class="card-overlay">
+                                <a href="#" class="btn btn-primary">Live Demo</a>
+                                <a href="#" class="btn btn-outline-light ms-2">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Portfolio</h5>
+                            <p class="card-text">A responsive portfolio website built with HTML, CSS, and Bootstrap
+                                showcasing my work and skills.</p>
+                            <div class="tech-stack mb-3">
+                                <small class="text-muted">HTML • CSS • Bootstrap • JavaScript</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <form id="form">
-            <input type="text" class="form-control mb-3" placeholder="Name">
-            <input type="email" class="form-control mb-3" placeholder="Email">
-            <input type="password" class="form-control mb-3" placeholder="Password">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="https://via.placeholder.com/400x250/28a745/ffffff?text=E-commerce+Site"
+                                class="card-img-top" alt="E-commerce Site">
+                            <div class="card-overlay">
+                                <a href="#" class="btn btn-success">Live Demo</a>
+                                <a href="#" class="btn btn-outline-light ms-2">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">E-commerce Platform</h5>
+                            <p class="card-text">A modern e-commerce website with shopping cart functionality and
+                                responsive design.</p>
+                            <div class="tech-stack mb-3">
+                                <small class="text-muted">Ms.Excel • PIVOT TABLES • LOOKUPS</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <select class="form-control mb-3">
-<option>Select</option>
-<option>Student</option>
-</select>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="https://via.placeholder.com/400x250/dc3545/ffffff?text=Weather+App"
+                                class="card-img-top" alt="Weather App">
+                            <div class="card-overlay">
+                                <a href="#" class="btn btn-danger">Live Demo</a>
+                                <a href="#" class="btn btn-outline-light ms-2">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">FREELANCE MARKETPLACE</h5>
+                            <p class="card-text">A tool for freelancers to connect with clients and offer their
+                                services.</p>
+                            <div class="tech-stack mb-3">
+                                <small class="text-muted">JavaScript • API • CSS • Responsive</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <textarea class="form-control mb-3"></textarea>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary btn-lg">View All Projects</a>
+            </div>
+        </div>
+    </section>
 
-            <input type="radio"> Male
-            <input type="radio"> Female
-            <br>
-            <input type="checkbox"> Accept
+    <!-- EDUCATION & EXPERIENCE -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-primary"></div>
+                            <div class="timeline-content">
+                                <h5 class="timeline-title">B.Tech in Computer Science</h5>
+                                <p class="timeline-subtitle">2024 - 2028</p>
+                                <p class="timeline-description">Currently pursuing my Bachelor's degree with a focus on
+                                    software development and web technologies.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-success"></div>
+                            <div class="timeline-content">
+                                <h5 class="timeline-title">Higher Secondary Education</h5>
+                                <p class="timeline-subtitle">2022 - 2024</p>
+                                <p class="timeline-description">Completed 12th grade with Mathematics, Physics, and
+                                    Computer Science as main subjects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <button class="btn btn-success mt-3" data-bs-toggle="tooltip" title="Submit Form">Submit</button>
-        </form>
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-info"></div>
+                            <div class="timeline-content">
+                                <h5 class="timeline-title">Web Development Intern</h5>
+                                <p class="timeline-subtitle">2024 - Present</p>
+                                <p class="timeline-description">Working on real-world projects, building responsive
+                                    websites, and learning modern development practices.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-warning"></div>
+                            <div class="timeline-content">
+                                <h5 class="timeline-title">Freelance Web Developer</h5>
+                                <p class="timeline-subtitle">2023 - 2024</p>
+                                <p class="timeline-description">Created custom websites for small businesses and
+                                    personal projects using HTML, CSS, and JavaScript.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-danger"></div>
+                            <div class="timeline-content">
+                                <h5 class="timeline-title">Self-Learning Journey</h5>
+                                <p class="timeline-subtitle">2022 - 2023</p>
+                                <p class="timeline-description">Started learning web development through online courses
+                                    and building personal projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Get In Touch</h2>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-info mb-5">
+                        <h4 class="mb-4">Let's Connect</h4>
+                        <p class="mb-4">I'm always interested in new opportunities and collaborations. Feel free to
+                            reach out!</p>
+
+                        <div class="contact-item mb-3">
+                            <i class="bi bi-envelope-fill text-primary me-3"></i>
+                            <span>harshitha@example.com</span>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <i class="bi bi-telephone-fill text-primary me-3"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <i class="bi bi-geo-alt-fill text-primary me-3"></i>
+                            <span>Your City, Country</span>
+                        </div>
+
+                        <div class="social-links mt-4">
+                            <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <form id="contactForm" class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100" data-bs-toggle="tooltip"
+                            title="Send Message">
+                            <i class="bi bi-send me-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-dark text-white text-center p-3">
-        <i class="bi bi-facebook"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-github"></i>
-        <p>© 2026 Harshitha</p>
+    <footer class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">© 2026 Harshitha. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="social-link text-white me-3" title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="#" class="social-link text-white me-3" title="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link text-white me-3" title="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link text-white" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
